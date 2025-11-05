@@ -128,12 +128,27 @@ header nav ul li:hover:after {
     justify-content: center;
     position: relative;
     z-index: 2;
+
 }
 
 .product-img img {
     max-width: 80%;
     max-width: 60%;
     filter: drop-shadow(0 0 30px rgba(0, 247, 255, 0.3));
+
+    /*animação*/
+    transform: translatex(200px);
+    opacity: 0;
+    transition: tranforme 0.6s ease, opacity 0.6s ease;
+    transition-delay: 0.5s;
+    
+
+
+}
+
+.active .product-img img{
+    transform: translatex(0);
+    opacity: 1;
 }
 
 .content {
